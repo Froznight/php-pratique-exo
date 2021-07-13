@@ -35,5 +35,9 @@
             print "Erreur !: " . $error->getMessage() . "<br/>";
             die();
         }
+        echo'<h2 class="d-block p-5 fs-3"> Le titre = '.$_POST['titre'].'</h2>
+        <h2 class="d-block p-5 fs-3"> Le interpret = '.$_POST['intret'].'</h2>
+        <h2 class="d-block p-5 fs-3"> Le genre = '.$_POST['genre'].'</h2>
+        <h2 class="d-block p-5 fs-3"> Le ann2e = '.$_POST['annee'].'</h2>';
         ?>
     </body>

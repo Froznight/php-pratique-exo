@@ -20,8 +20,8 @@
                     <li class="nav-item">
                     <a class="nav-link" href="./pagInput.php">Entrée</a>
                     </li>
-                    <form class="d-flex" action="./sherching.php">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <form class="d-flex" action="research.php" method="POST">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="research">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </ul>

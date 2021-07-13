@@ -12,11 +12,11 @@
         // this my first title
         echo "<h1>Helo ".$nom." </h1>";
 
-        echo "ceci est une donnée".$_GET['pouet']." de type get ";
-        // transfer varible to cible page
-        // ?is very important for interpreteur 
-        echo '<a href="./cible.php?pouet=varible&trucMuch=test"> cliquer ici </a>'
-        
+        // echo "ceci est une donnée".$_GET['pouet']." de type get ";
+        // // transfer varible to cible page
+        // // ?is very important for interpreteur 
+        // echo '<a href="./cible.php?pouet=varible&trucMuch=test"> cliquer ici </a>'
+    
     ?>
     <h1>Accueil</h1>
     <!-- <form action="./cible.php" method=post>

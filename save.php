@@ -9,6 +9,7 @@ include("./include/header.php");
     // connect to my Data base
     $user = "root";
     $passe = "root";
+    // check of good 
     try {
         $dbc = new PDO('mysql:host=localhost;dbname=musique', $user,$passe);
 
@@ -23,9 +24,9 @@ include("./include/header.php");
 
         // logout to morceau DB
         $dbC = null;
-        
-    } catch (PDOException $e) {
-        print "Erreur !: " . $e->getMessage() . "<br/>";
+
+    } catch (PDOException $error) {
+        print "Erreur !: " . $error->getMessage() . "<br/>";
         die();
     }
     ?>

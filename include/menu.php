@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="french">
+<html lang="fr">
 <?php include("./header.php")?>
 <body class="m-4">
     <header>

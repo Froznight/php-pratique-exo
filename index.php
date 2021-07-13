@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="french">
+<html lang="fr">
 <?php
     $titre="page d'accueil";
     include("./include/header.php");

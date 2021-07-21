@@ -21,15 +21,15 @@
             //  $dbc->query("INSERT INTO morceau SET titre='".$_POST['titre']."'
             // ,interprete='".$_POST['intret']."'
             // ,genre='".$_POST['genre']."',annee='".$_POST['annee']."';" );
-            
-            //Complaiting ? whit array values
-            $sQ = $dbc->prepare("INSERT INTO morceau SET titre=?,interprete=?,genre=?,annee=?;" );
-            //excute la request
-            $sQ->execute(array($_POST['titre'],$_POST['intret'],$_POST['genre'],$_POST['annee']));
-
+            if($_GET['action']=='insert'){
+                //Complaiting ? whit array values
+                $sQ = $dbc->prepare("INSERT INTO morceau SET titre=?,interprete=?,genre=?,annee=?;" );
+                //excute la request
+                $sQ->execute(array($_POST['titre'],$_POST['intret'],$_POST['genre'],$_POST['annee']));
+            }
             // logout to morceau DB
             $dbC = null;
-            
+
             // error handling
         } catch (PDOException $error) {
             print "Erreur !: " . $error->getMessage() . "<br/>";

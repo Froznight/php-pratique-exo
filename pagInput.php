@@ -12,7 +12,7 @@
    ?>
    <H1 class="pt-5 pb-3">Données à saisire</H1>
    <!-- [Form for insertion] -->
-   <form action="./save.php" method="POST" class="p-5">
+   <form action="./save.php$action=insert" method="POST" class="p-5">
   <div class="mb-3">
     <label for="title" class="form-label">Titre de la musique</label>
     <input type="text" class="form-control" id="title" name="titre">

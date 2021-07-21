@@ -27,6 +27,18 @@
                 //excute la request
                 $sQ->execute(array($_POST['titre'],$_POST['intret'],$_POST['genre'],$_POST['annee']));
             }
+            if($_GET['action']=='edit'){
+                //Complaiting ? whit array values
+                $sQ = $dbc->prepare("UPDATE INTO morceau SET titre=?,interprete=?,genre=?,annee=? WHERE id_morceau;" );
+                //excute la request
+                $sQ->execute(array($_POST['titre'],$_POST['intret'],$_POST['genre'],$_POST['annee'],$_POST['id']));
+            }
+            if($_GET['action']=='delet'){
+                //Complaiting ? whit array values
+                $sQ = $dbc->prepare("DELETE FROM morceau WHERE id_morceau=?" );
+                //excute la request
+                $sQ->execute(array($_POST['id']));
+            }
             // logout to morceau DB
             $dbC = null;
 
@@ -36,8 +48,8 @@
             die();
         }
         echo'<h2 class="d-block p-5 fs-3"> Le titre = '.$_POST['titre'].'</h2>
-        <h2 class="d-block p-5 fs-3"> Le interpret = '.$_POST['intret'].'</h2>
+        <h2 class="d-block p-5 fs-3"> L\'interpret = '.$_POST['intret'].'</h2>
         <h2 class="d-block p-5 fs-3"> Le genre = '.$_POST['genre'].'</h2>
-        <h2 class="d-block p-5 fs-3"> Le ann2e = '.$_POST['annee'].'</h2>';
+        <h2 class="d-block p-5 fs-3"> L\' année = '.$_POST['annee'].'</h2>';
         ?>
     </body>

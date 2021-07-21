@@ -19,10 +19,11 @@
             $s->execute();
             
             while($r= $s->fetch()){
-                echo'<section>';
-                echo '<h2>'.$r['titre'].'<span class="d-block">('.$r['annee'].'-'.$r['genre'].')</span></h2> 
-                <h3> de '.$r['interprete'].'</h3>';
-                echo'</section>';
+                echo '<p>';
+                echo '<a href="modifier.php?choix=formulaire&id='.$r['id_morceau'].'">'.$r['titre'].'
+                <span>('.$r['annee'].'-'.$r['genre'].'-'.$r['interprete'].')</span></a>';
+                echo '- <a href="./supprimer.php?choix=formulaire&id='.$r['id_morceau'].'">Supprimer</a>';
+                echo '<p>';
             };
 
              //logout to morceau DB

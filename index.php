@@ -6,7 +6,6 @@
 ?>
 <body class="m-4">
     <?php
-  
         include("./include/menu.php");
         $nom = "Loïc";
         // this my first title

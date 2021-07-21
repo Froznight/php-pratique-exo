@@ -20,6 +20,9 @@
                     <li class="nav-item">
                     <a class="nav-link" href="./pagInput.php">Entrée</a>
                     </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./modifier.php">Modifier</a>
+                    </li>
                     <form class="d-flex" action="research.php" method="POST">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="research">
                         <button class="btn btn-outline-success" type="submit">Search</button>
